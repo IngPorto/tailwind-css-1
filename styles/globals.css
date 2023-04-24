@@ -7,6 +7,7 @@
 /* Utilerías personalizadas */
 .rotate-45 {
   transform: rotate(45deg);
+  background-color: rgb(109, 119, 128);
 }
 
 .zoom {
@@ -25,5 +26,11 @@
 @responsive {
   .be-blue {
     background-color: rgb(63, 113, 250);
+  }
+  .be-red {
+    background-color: rgb(230, 74, 87);
+  }
+  .be-gray {
+    background-color: rgb(109, 119, 128);
   }
 }

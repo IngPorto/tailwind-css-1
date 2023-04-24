@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -64,31 +65,37 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a
+                <Link
                   href="/"
                   className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
                   aria-current="page"
                 >
                   Inicio
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/flex"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                 >
                   Flex
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/utilerias"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                 >
                   Utilerías
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/variantes"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                 >
                   Variantes y Pseudo-Clases
-                </a>
+                </Link>
+                <Link
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  href="/app"
+                >
+                  App
+                </Link>
               </div>
             </div>
           </div>
