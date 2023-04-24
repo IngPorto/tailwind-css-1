@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./animations.css";
+
+/* Utilerías personalizadas */
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.zoom {
+  transform: scale(2);
+}
+
+/* Variantes */
+@variants hover {
+  .shrink-1-in {
+    animation-name: shrink-1-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+}
+
+@responsive {
+  .be-blue {
+    background-color: rgb(63, 113, 250);
+  }
+}

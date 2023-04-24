@@ -1,0 +1,23 @@
+@keyframes shrink-1-in {
+  from {
+    transform: scale(1) rotate(45deg);
+  }
+  to {
+    transform: scale(0.7) rotate(0deg);
+  }
+}
+
+@keyframes shrink-1-out {
+  from {
+    transform: scale(0.7) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+.shrink-1-out {
+  animation-name: shrink-1-out;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
