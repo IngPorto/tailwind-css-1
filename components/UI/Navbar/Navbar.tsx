@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [showMiniMenu, setShowMiniMenu] = useState(false);
+
+  const handleMenuButtom = () => {
+    setShowMiniMenu(!showMiniMenu);
+  }
+
   return (
     <nav className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -22,6 +29,7 @@ const Navbar = () => {
                 strokeWidth="1.5"
                 stroke="currentColor"
                 aria-hidden="true"
+                onClick={handleMenuButtom}
               >
                 <path
                   strokeLinecap="round"
@@ -140,7 +148,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="sm:hidden" id="mobile-menu">
+      <div className={`sm:hidden sm:${true ? "block":""}`} id="mobile-menu">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <a
             href="#"
